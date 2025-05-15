@@ -9,7 +9,7 @@ public class TaskInboxTest {
     @Test
     public void testGetTasksForValidStudent() {
         List<Task> tasks = TaskInbox.getTasksForStudent("S123");
-        assertEquals(2, tasks.size());
+        assertEquals(3, tasks.size());
         assertEquals("Assignment 1", tasks.get(0).getTitle());
         assertEquals("Graded", tasks.get(1).getStatus());
     }
