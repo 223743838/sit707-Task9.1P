@@ -1,4 +1,4 @@
-name: Java CI with Maven
+name: Java CI with Maven (Full Build)
 
 on:
   push:
@@ -20,5 +20,5 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
 
-    - name: Build and Test with Maven
-      run: mvn -B test
+    - name: Build, Test, and Package with Maven
+      run: mvn -B clean install
